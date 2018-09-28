@@ -1235,8 +1235,8 @@ t_set_rlimit_nofile
 
 static VALUE t_set_rlimit_nofile (VALUE self UNUSED, VALUE arg)
 {
-	arg = (NIL_P(arg)) ? -1 : NUM2INT (arg);
-	return INT2NUM (evma_set_rlimit_nofile (arg));
+	int i = (NIL_P(arg)) ? -1 : NUM2INT (arg);
+	return INT2NUM (evma_set_rlimit_nofile (i));
 }
 
 /***************************
