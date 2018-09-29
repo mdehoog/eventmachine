@@ -12,7 +12,7 @@ Gem::Specification.new do |s|
   s.files = `git ls-files README.md CHANGELOG.md GNU LICENSE rakelib ext java lib docs`.split
   s.test_files = `git ls-files tests examples`.split
 
-  s.extensions = ["ext/extconf.rb", "ext/fastfilereader/extconf.rb"]
+  # s.extensions = ["ext/extconf.rb", "ext/fastfilereader/extconf.rb"]
 
   if s.respond_to?(:metadata=)
     s.metadata ||= {}
